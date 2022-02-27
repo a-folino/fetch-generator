@@ -1,2 +1,2 @@
 # fetchgenerator
-Generates FetchAPI code using input from user.
+Generates FetchAPI JavaScript code using input from user.
