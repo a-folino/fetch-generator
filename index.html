@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch API Code Generator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fetch API Code Generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
 
-            <div class="app">
-                <header>
-                    <h2>Fetch API Code Generator</h2>
-                    <p>Helping beginners utilise APIs</p>
-                </header>
-                
-                <span>
-                    <p>API url: <input class="api"></p>
-                    <p>Store URL as a variable? <select><option value="n">No</option><option value="y">Yes</option></select></p>
-                    <button>Generate code</button>
-                </span>
+                <div class="app">
+                    <header>
+                        <h2>Fetch API Code Generator</h2>
+                        <p>Helping beginners utilise APIs</p>
+                    </header>
+                    
+                    <span>
+                        <p>API url: <input class="api"></p>
+                        <p>Store URL as a variable? <select><option value="n">No</option><option value="y">Yes</option></select></p>
+                        <button>Generate code</button>
+                    </span>
 
-                <div class="code">
-                    <p class="y"></p>
-                    <p class="fetch"></p>
-                    <p class="then1"></p>
-                    <p class="then2"></p>
+                    <div class="code">
+                        
+                        <p class="yes"></p>
+                        <p class="fetch"></p>
+                        <p class="then1"></p>
+                        <p class="then2"></p>
+        
+                    </div>
 
-                    <span class="jsonObject"></span>
+                    <p class="explain">The generated code will log the linked API's JSON object to the console of this page, copy and paste the code to use on your page. Access data from the API using
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#dot_notation">dot notation</a> (i.e. data.author).</p>
                 </div>
 
-                <p class="explain">The generated code will log the linked API's JSON object to the console of this page, copy and paste the code to use on your page. Access data from the API using
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#dot_notation">dot notation</a> (i.e. data.author).</p>
-            </div>
-
-    </div>
-    <script src="script.js"></script>
-</body>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
