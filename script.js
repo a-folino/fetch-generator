@@ -4,7 +4,7 @@ const fetch1 = document.querySelector('.fetch');
 const then1 = document.querySelector('.then1');
 const then2 = document.querySelector('.then2');
 const select = document.querySelector('select');
-const y = document.querySelector('.y');
+const yes = document.querySelector('.yes');
 const code = document.querySelector('.jsonObject');
 const explain = document.querySelector('.explain');
 
@@ -14,25 +14,20 @@ const logData = () => {
     .then(data => console.log(JSON.stringify(data)));
 };
 
-
 button.addEventListener('click', () => {
     if (select.value === 'n') {
         fetch1.textContent = `fetch(${apiURL.value})`
         then1.textContent = `.then(response => response.json())`;
         then2.textContent = `.then(data => console.log(data));`;
-        y.textContent = '';
+        yes.textContent = '';
         logData();
     } else {
-        y.textContent = `const url = "${apiURL.value}";`
+        yes.textContent = `const url = "${apiURL.value}";`
         fetch1.textContent = `fetch(url)`
         then1.textContent = `.then(response => response.json())`;
         then2.textContent = `.then(data => console.log(data));`;
         logData();
     }
-
-    // const fetching = fetch('https://jsonplaceholder.typicode.com/todos/1')
-    //                 .then(response => response.json())
-    //                 .then(data => code.textContent = JSON.stringify(data));
 });
 
 apiURL.addEventListener('keyup', (e) => {
